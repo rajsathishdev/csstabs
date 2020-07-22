@@ -1,0 +1,48 @@
+:root {
+    font-size: calc(16px + 0.3vw);
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: rgba(0,255,255,0.5);
+    padding:0;
+    margin:0;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid grey;
+    list-style-type: none;
+    font-size: 1.5rem;
+}
+
+li:hover {
+    background-color: #AAA;
+}
+
+
+
+[data-tab-target] {
+    cursor:pointer;
+    
+
+}
+
+.active[data-tab-target] {
+    background-color: #CCC;
+}
+
+[data-tab-content] {
+    display: none;
+}
+
+.active[data-tab-content] {
+    display: block;
+}
